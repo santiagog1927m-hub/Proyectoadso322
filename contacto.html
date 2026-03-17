@@ -26,71 +26,14 @@
 
 <section>
 
-<article>
-
-    <h2>Formulario de Registro</h2>
-
-<form>
-
-<label>Nombre completo:</label><br>
-<input type="text" name="nombre"><br><br>
-
-<label>Tipo de identificación:</label><br>
-<select>
-    <option>Cédula</option>
-    <option>Tarjeta de identidad</option>
-    <option>Pasaporte</option>
-</select><br><br>
-
-<label>Número de identificación:</label><br>
-<input type="number"><br><br>
-
-<label>Correo electrónico:</label><br>
-<input type="email"><br><br>
-
-<label>Teléfono:</label><br>
-<input type="tel"><br><br>
-
-<label>Dirección:</label><br>
-<input type="text"><br><br>
-
-<label>Fecha de nacimiento:</label><br>
-<input type="date"><br><br>
-
-<label>Edad:</label><br>
-<input type="number"><br><br>
-
-<label>Género:</label><br>
-    <input type="radio" name="genero"> Masculino
-    <input type="radio" name="genero"> Femenino
-    <input type="radio" name="genero"> Otro
-<br><br>
-
-<label>Preferencias musicales:</label><br>
-    <input type="checkbox"> Trap<br>
-    <input type="checkbox"> Reggaetón<br>
-    <input type="checkbox"> Rap<br><br>
-
-<label>Ocupación:</label><br>
-<input type="text"><br><br>
-
-<label>Comentario:</label><br>
-<textarea rows="4" cols="40"></textarea><br><br>
-
-<button type="submit">Enviar</button>
-
-</form>
-
-</article>
-
-</section>
-    <br><br>    
-
-    <section>
-
-<h2>Inicio de Sesión</h2>
+<h2>Registro de Usuario</h2>
 
 <form action="#" method="POST" autocomplete="on">
+
+<label for="nombre">Nombre:</label>
+<br>
+<input type="text" id="nombre" name="nombre" required>
+<br><br>
 
 <label for="correo">Correo electrónico:</label>
 <br>
@@ -100,6 +43,57 @@
 <label for="password">Contraseña:</label>
 <br>
 <input type="password" id="password" name="password" required>
+<br><br>
+
+<label for="edad">Edad:</label>
+<br>
+<input type="number" id="edad" name="edad">
+<br><br>
+
+<label for="fecha">Fecha de nacimiento:</label>
+<br>
+<input type="date" id="fecha" name="fecha">
+<br><br>
+
+<label>Género:</label>
+<br>
+<input type="radio" name="genero"> Masculino
+<input type="radio" name="genero"> Femenino
+<br><br>
+
+<label>Intereses:</label>
+<br>
+<input type="checkbox"> Música
+<input type="checkbox"> Conciertos
+<input type="checkbox"> Cultura urbana
+<br><br>
+
+<label for="comentario">Comentario:</label>
+<br>
+<textarea id="comentario" name="comentario"></textarea>
+<br><br>
+
+<button type="submit">Registrarse</button>
+
+</form>
+
+</section>
+    <br><br>    
+
+    <section>
+
+<h2>Inicio de Sesión</h2>
+
+    <form action="#" method="POST" autocomplete="on">
+
+<label for="correoLogin">Correo electrónico:</label>
+<br>
+<input type="email" id="correoLogin" name="correoLogin" required>
+<br><br>
+
+<label for="passwordLogin">Contraseña:</label>
+<br>
+<input type="password" id="passwordLogin" name="passwordLogin" required>
 <br><br>
 
 <button type="submit">Iniciar sesión</button>
