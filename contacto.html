@@ -1,112 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - Blog Pirlo 420</title>
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
 
-<head>
-<meta charset="UTF-8">
-<title>Contacto - Blog Pirlo 420</title>
-<link rel="stylesheet" href="css/estilos.css">
-</head>
+    <body>
 
-<body>
+        <header>
+            <h1>Contacto y Registro de Fans</h1>
+            <p>Regístrate para recibir noticias sobre Pirlo 420</p>
+        </header>
 
-<header>
-    <h1>Contacto y Registro de Fans</h1>
-    <p>Regístrate para recibir noticias sobre Pirlo 420</p>
-</header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="biografia.html">Biografía</a>
+            <a href="musica.html">Música</a>
+            <a href="discografia.html">Discografía</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="documentos/pirlo420_blog.pdf" target="_blank">Documento</a>
+        </nav>
 
-<nav>
-    <a href="index.html">Inicio</a>
-    <a href="biografia.html">Biografía</a>
-    <a href="musica.html">Música</a>
-    <a href="discografia.html">Discografía</a>
-    <a href="galeria.html">Galería</a>
-    <a href="contacto.html">Contacto</a>
-    <a href="documentos/pirlo420_blog.pdf" target="_blank">Documento</a>
-</nav>
+        <main>
 
-<section>
+            <article>
 
-<h2>Registro de Usuario</h2>
+                <section>
+                    <h2>Registro de Usuario</h2>
 
-<form action="#" method="POST" autocomplete="on">
+                    <form action="#" method="POST" autocomplete="on">
 
-<label for="nombre">Nombre:</label>
-<br>
-<input type="text" id="nombre" name="nombre" required>
-<br><br>
+                        <div>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
 
-<label for="correo">Correo electrónico:</label>
-<br>
-<input type="email" id="correo" name="correo" required>
-<br><br>
+                        <div>
+                            <label for="correo">Correo electrónico:</label>
+                            <input type="email" id="correo" name="correo" required>
+                        </div>
 
-<label for="password">Contraseña:</label>
-<br>
-<input type="password" id="password" name="password" required>
-<br><br>
+                        <div>
+                            <label for="password">Contraseña:</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
 
-<label for="edad">Edad:</label>
-<br>
-<input type="number" id="edad" name="edad">
-<br><br>
+                        <div>
+                            <label for="edad">Edad:</label>
+                            <input type="number" id="edad" name="edad">
+                        </div>
 
-<label for="fecha">Fecha de nacimiento:</label>
-<br>
-<input type="date" id="fecha" name="fecha">
-<br><br>
+                        <div>
+                            <label for="fecha">Fecha de nacimiento:</label>
+                            <input type="date" id="fecha" name="fecha">
+                        </div>
 
-<label>Género:</label>
-<br>
-<input type="radio" name="genero"> Masculino
-<input type="radio" name="genero"> Femenino
-<br><br>
+                        <div>
+                            <label>Género:</label>
+                            <input type="radio" name="genero"> Masculino
+                            <input type="radio" name="genero"> Femenino
+                        </div>
 
-<label>Intereses:</label>
-<br>
-<input type="checkbox"> Música
-<input type="checkbox"> Conciertos
-<input type="checkbox"> Cultura urbana
-<br><br>
+                        <div>
+                            <label>Intereses:</label>
+                            <input type="checkbox"> Música
+                            <input type="checkbox"> Conciertos
+                            <input type="checkbox"> Cultura urbana
+                        </div>
 
-<label for="comentario">Comentario:</label>
-<br>
-<textarea id="comentario" name="comentario"></textarea>
-<br><br>
+                        <div>
+                            <label for="comentario">Comentario:</label>
+                            <textarea id="comentario" name="comentario"></textarea>
+                        </div>
 
-<button type="submit">Registrarse</button>
+                        <button type="submit">Registrarse</button>
 
-</form>
+                    </form>
+                </section>
 
-</section>
-    <br><br>    
+                <section>
+                    <h2>Inicio de Sesión</h2>
 
-    <section>
+                    <form action="#" method="POST" autocomplete="on">
 
-<h2>Inicio de Sesión</h2>
+                        <div>
+                            <label for="correoLogin">Correo electrónico:</label>
+                            <input type="email" id="correoLogin" name="correoLogin" required>
+                        </div>
 
-    <form action="#" method="POST" autocomplete="on">
+                        <div>
+                            <label for="passwordLogin">Contraseña:</label>
+                            <input type="password" id="passwordLogin" name="passwordLogin" required>
+                        </div>
 
-<label for="correoLogin">Correo electrónico:</label>
-<br>
-<input type="email" id="correoLogin" name="correoLogin" required>
-<br><br>
+                        <button type="submit">Iniciar sesión</button>
 
-<label for="passwordLogin">Contraseña:</label>
-<br>
-<input type="password" id="passwordLogin" name="passwordLogin" required>
-<br><br>
+                    </form>
+                </section>
 
-<button type="submit">Iniciar sesión</button>
+            </article>
 
-</form>
+            <aside>
+                <h3>Información</h3>
+                <p>
+                    Regístrate para recibir novedades, lanzamientos y eventos
+                    de Pirlo 420 directamente en tu correo.
+                </p>
+            </aside>
 
-</section>
+        </main>
 
+        <footer>
+            <p>Blog educativo sobre Pirlo 420 - 2026</p>
+        </footer>
 
-
-<footer>
-    <p>Blog educativo sobre Pirlo 420 - 2026</p>
-</footer>
-
-</body>
+    </body>
 </html>
